@@ -1,5 +1,3 @@
-package regression;
-
 public class MatrixOperator 
 {
 	public double[][] multiply(double[][] a, double[][] b)
