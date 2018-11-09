@@ -1,5 +1,7 @@
 # Multivariate-Linear-Regression-Tools
 
+This project is designed as an example implementation of several common linear regression techniques, building many of the related tools from scratch. Although the project is intended as an example implemenation, many of the methods and structures created can be used reuesed as needed in a more template-like manner.
+
 Matrix Operations Class:
 
 Implementing several common matrix operations as java functions. The primary intention is for these operations to be used for application in single and multivariate linear regression.
