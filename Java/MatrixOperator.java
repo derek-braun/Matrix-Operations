@@ -1,3 +1,5 @@
+package regression;
+
 public class MatrixOperator 
 {
 	public double[][] multiply(double[][] a, double[][] b)
@@ -30,16 +32,17 @@ public class MatrixOperator
 	public double[] vectorMultiply(double[][] a, double[] v)
 	{
 		double partial = 0;
+		double[] temp = new double[a.length];
 		for(int i = 0; i < a.length; i++)
 		{
 			for(int j = 0; j < a[0].length; j++)
 			{
 				partial += a[i][j] * v[j];
 			}
-			v[i] = partial;
+			temp[i] = partial;
 			partial = 0;
 		}
-		return v;
+		return temp;
 	}
 	
 	public double[][] add(double[][] a, double[][] b)
@@ -81,6 +84,7 @@ public class MatrixOperator
 	public double[][] inverse(double[][] a)
 	{
 		double [][] eye = createIdentity(a.length);
+		double [][] temp = a;
 		int next = 0;
 		int cont = 0;
 		
@@ -122,6 +126,7 @@ public class MatrixOperator
 			}
 			next++;
 		}
+		a = temp;
 		return eye;
 	}
 
