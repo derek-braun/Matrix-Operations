@@ -27,3 +27,7 @@ The regression tools supported in this example include:
 - Associated Helper Functions:
   - Standard Deviation
   - Mean Calculations
+
+Needs Fixing:
+
+-Scale Features
