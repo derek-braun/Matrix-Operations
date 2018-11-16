@@ -31,3 +31,4 @@ The regression tools supported in this example include:
 Needs Fixing:
 
 - Scale Features
+- Gradient Descent
