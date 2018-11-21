@@ -1,3 +1,9 @@
+/*
+*  Matrix operator class implemnts several methods to use common matrix operations for linear regression.
+*
+*  Created: November 2018 by: Derek Braun
+*/
+
 package regression;
 
 public class MatrixOperator 
