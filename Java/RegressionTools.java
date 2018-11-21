@@ -1,4 +1,32 @@
+/*
+*  Regression tools class implements several methods to utilize common linear regression algorithms.
+*  Helper functions determine standard deviation and mean.
+*
+*  Created: November 2018 by: Derek Braun
+*/
+
 package regression;
+public double[] gradientDescent(double[][] x, double[] theta, double[] y, double learn);
+//Performs gradient descent on a matrix "x", with coefficient vector "theta", output vector "y" and learning rate "learn".
+//Each call performs one iteration. Therfore, method must be iterated to the order desired manually when called.
+//Returns the updated coeffient vector.
+
+public double[] normalEquation(double[][] x, double[] y);
+//Performs the normal equation on a matrix "x", with output vector "y".
+//Only one iteration required.
+//Returns the optimized coeffient vector.
+
+public void scaleFeatures(double[][] x);
+//Scales features to between values of -1 to 1. 
+//Helps reduce the computation time of gradient descent and the normal equation.
+
+private double[] calculateMean(double[][] x);
+//Calculates the mean of each feature in matrix "x".
+//Returns a vector of means.
+
+private double[] standardDeviation(double[][] x, double[] mean);
+//Calculates the standard deviatio of each feature in matrix "x".
+//Returns a vector of SD's.
 
 public class RegressionTools 
 {
