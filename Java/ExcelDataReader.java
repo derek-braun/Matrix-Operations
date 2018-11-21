@@ -1,3 +1,11 @@
+/*
+*  Excel data reader class reads data from a spreadsheet and formats as a 2D array.
+*  The class implements the jexcel api.
+*  Visit: http://jexcelapi.sourceforge.net/resources/javadocs/2_6_10/docs/index.html for reference.
+*
+*  Created: November 2018 by: Derek Braun
+*/
+
 package regression;
 
 import java.io.File;
